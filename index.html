@@ -11,44 +11,108 @@
 		  
 		<!-- 可选的Bootstrap主题文件（一般不用引入） -->  
 		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-		<style type="text/css">
-			
-		</style>
+		<!--[if lt IE 9]>
+			<script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
 	</head>
 	<body>
 		<div class="container-fluid">
-			<div class="row page-header">
-				<div class="col-md-3">
+			<div class="row">
+				<div class="bs-example" data-example-id="inverted-navbar">
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				            <span class="sr-only">Toggle navigation</span>
+				            <span class="icon-bar"></span>
+				            <span class="icon-bar"></span>
+				            <span class="icon-bar"></span>
+				         </button>
+						<a class="navbar-brand" href="#">
+							<img alt="Brand" width="20" height="20" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524984249643&di=fae6f491430f87a63e16d099e6cf81ef&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F03134b357eb7b0ca84a0e282b87ffc5.jpg%40250w_188h_1c_1e_2o_100sh.jpg">
+						</a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li class="active">
+								<a href="https://github.com/Hoki-Lin">Home<span class="sr-only">(current)</span></a>
+							</li>
+							<li>
+								<a href="https://www.bilibili.com/">Bilibili</a>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">List<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="https://weibo.com/u/5690540493">weibo</a>
+									</li>
+									<li>
+										<a href="https://www.zhihu.com/people/hokilin/activities">zhihu</a>
+									</li>
+									<li>
+										<a href="https://blog.csdn.net/qq_37118873">csdn</a>
+									</li>
+									<li>
+										<a href="https://github.com/Hoki-Lin">github</a>
+									</li>
+									<li role="separator" class="divider"></li>
+									<li>
+										<a href="http://v3.bootcss.com/">Bootstrap</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<form class="navbar-form navbar-right" action="https://www.baidu.com/">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Search">
+							</div>
+							<button type="submit" class="btn btn-default">Submit</button>
+						</form>
+					</div>
+					<!-- /.navbar-collapse -->
+				</div>
+				<!-- /.container-fluid -->
+			</nav>
+		</div>
+			</div>
+			<div class="row page-header"></div>
+			<div class="row">
+				<div class="col-md-4"></div>
+				<div class="col-md-4">
 					<img src="http://imgsrc.baidu.com/forum/w%3D580/sign=b0c34179cbfcc3ceb4c0c93ba244d6b7/ad64034f78f0f7365810815a0955b319eac413fb.jpg" class="img-responsive img-circle"/>
 				</div>
-				<div class="text-center">
-					<h1><strong>Hoki_Lin</strong></h1>
-					<p><small>拿着橡皮擦不掉你脑子黑漆漆</small></p>
-				</div>
+				<div class="col-md-4"></div>
+			</div>
+			<div class="row page-header text-center">
+				<h1><strong>Hoki_Lin</strong></h1>
+				<blockquote>拿着橡皮擦不掉你脑子黑漆漆<small>--from<cite> github</cite></small></blockquote>
 			</div>
 			<div class="row page-header">
 				<div class="col-md-3 col-xs-6 col-sm-4">
 					<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524981080777&di=4e5e3985efbc4f8c05c843366506916d&imgtype=0&src=http%3A%2F%2Fwww.itmsc.cn%2Fuploads%2Fallimg%2F1601%2F454_160128095138_1.jpg" class="img-responsive"/>
-					<h3 class="text-center">weibo</h3>
-					<p class="text-center"><a href="https://weibo.com/u/5690540493">Hoki's weibo</a></p>
+					<h1 class="text-center">weibo</h1>
+					<h5 class="text-center"><a href="https://weibo.com/u/5690540493">Hoki's weibo</a></h5>
 				</div>
 				<div class="col-md-3 col-xs-6 col-sm-4">
 					<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524981546944&di=30de1ed1ff41af4ae804f80eaf67b688&imgtype=0&src=http%3A%2F%2Fimages.liqucn.com%2Fimg%2Fh98%2Fh28%2Fimg_localize_6a14a763d95f34a68e19afb8bb72c8bd_560x350.jpg" class="img-responsive"/>
-					<h3 class="text-center">zhihu</h3>
-					<p class="text-center"><a href="https://www.zhihu.com/people/hokilin/activities">Hoki's zhihu</a></p>
+					<h1 class="text-center">zhihu</h1>
+					<h5 class="text-center"><a href="https://www.zhihu.com/people/hokilin/activities">Hoki's zhihu</a></h5>
 				</div>
 				<div class="col-md-3 col-xs-6 col-sm-4">
 					<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524983778078&di=63eefaae90c91dbdd56933d9ae37ded1&imgtype=0&src=http%3A%2F%2Fimg3.doubanio.com%2Flpic%2Fs10279300.jpg" class="img-responsive"/>
-					<h3 class="text-center">csdn</h3>
-					<p class="text-center"><a href="https://blog.csdn.net/qq_37118873">Hoki's csdn</a></p>
+					<h1 class="text-center">csdn</h1>
+					<h5 class="text-center"><a href="https://blog.csdn.net/qq_37118873">Hoki's csdn</a></h5>
 				</div>
 				<div class="col-md-3 col-xs-6 col-sm-4">
 					<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524982385198&di=740acd2c88e3ed2923449f164d30b0ac&imgtype=0&src=http%3A%2F%2Fdn-sdkcnssl.qbox.me%2Farticle%2FgQzzyDDHRGwAqpNTHfO4.jpg" class="img-responsive"/>
-					<h3 class="text-center">github</h3>
-					<p class="text-center"><a href="https://github.com/Hoki-Lin">Hoki's github</a></p>
+					<h1 class="text-center">github</h1>
+					<h5 class="text-center"><a href="https://github.com/Hoki-Lin">Hoki's github</a></h5>
 				</div>
 			</div>
-			<div class="row page-header">
+			<div class="row page-header span12">
 				<h1 class="page-header text-center"><strong>ABOUT ME</strong></h1>
 				<p class="text-center">
 					Hello,my name is Hoki_Lin.I live in Guangdong, China.
@@ -61,6 +125,12 @@
 				<h6 class="text-center">COPYRIGHT (C) 2018 BY HOKI SOFTWARE. ALL RIGHTS RESERVED.</h6>
 			</div>
 		</div>
+		
+		
+		<script>
+			
+		</script>
+		
 		
 		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->  
 		<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>  
