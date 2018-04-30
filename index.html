@@ -13,7 +13,21 @@
 		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 		<!--[if lt IE 9]>
 			<script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->		
+		<![endif]-->	
+		<style type="text/css">
+			#GoTop{
+                width:40px;
+                height:40px;
+                background-color:#F59E1D;
+                position:fixed;
+                bottom:30px;
+                right:30px;
+                font-size:19pt;
+                text-align:center;
+                color:#FFF;
+                text-decoration:none;
+            }
+		</style>
 	</head>
 	<body>
 		<div class="container-fluid">
@@ -124,11 +138,64 @@
 			<div class="row">
 				<h6 class="text-center">COPYRIGHT (C) 2018 BY HOKI SOFTWARE. ALL RIGHTS RESERVED.</h6>
 			</div>
+			<div>
+				<a id="GoTop" onclick="GoTopFunction()" href="javascript:void(0)" style="color: rgb(255, 255, 255); background-color: rgb(44, 44, 44); text-decoration: none;">∧</a>
+			</div>
 		</div>
 	
-		
+	
+	
+	
+	
+	
+	
 		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->  
-		<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>  
+		<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script> 
+		
+		<script>
+			$(document).ready(function(){
+				$("#GoTop").mouseenter(
+                    function(){
+                        $("#GoTop").css("color","#FFF");
+                        $("#GoTop").css("background-color","#0D87EA");
+                        $("#GoTop").css("text-decoration","none");
+                    }
+                );
+                $("#GoTop").mouseleave(
+                    function(){
+                        $("#GoTop").css("color","#FFF");
+                        $("#GoTop").css("background-color","#2C2C2C");
+                        $("#GoTop").css("text-decoration","none");
+                    }
+                );
+			});
+			var sth;
+			function GoTopFunction(){
+				FourLeafCloverZCVar=setInterval(GoTopFunctionEachScrollBy,10);    
+			}
+
+			function GoTopFunctionEachScrollBy(eachHeight){
+
+				//判断是否存在以下两个实例
+				if(document.documentElement && document.documentElement.scrollTop)
+				{
+					if(document.documentElement.scrollTop<=0){
+						clearInterval(sth);
+					}else{
+						window.scrollBy(0,-25);
+					}
+				}else{                                                           
+					if(document.body.scrollTop<=0){
+						clearInterval(sth);
+					}else{
+						window.scrollBy(0,-25);
+					}
+				}
+			}
+			
+		</script>
+		
+		
 		  
 		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->  
 		<script src="https://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
