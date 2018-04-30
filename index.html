@@ -95,7 +95,7 @@
 			<div class="row page-header"></div>
 			<div class="row">
 				<div class="col-md-5"></div>
-				<div class="col-md-2">
+				<div class="col-md-2" id="pic" onmouseover="stopSpin()" onmouseout="startSpin()">
 					<img src="http://imgsrc.baidu.com/forum/w%3D580/sign=b0c34179cbfcc3ceb4c0c93ba244d6b7/ad64034f78f0f7365810815a0955b319eac413fb.jpg" class="img-responsive img-circle"/>
 				</div>
 				<div class="col-md-5"></div>
@@ -169,6 +169,8 @@
                         $("#GoTop").css("text-decoration","none");
                     }
                 );
+                
+                time = window.setInterval(begin,10);
 			});
 			var sth;
 			function GoTopFunction(){
@@ -189,7 +191,20 @@
 					}
 				}
 			}
+			var rot = 10;// 角度
+			var time;// 定时器的名称
+			function startSpin(){
+				time = window.setInterval(begin,10);
+			}
 			
+			function stopSpin(){
+				window.clearInterval(time);
+			}
+			
+			function begin(time) {
+				document.getElementById("pic").style.transform = "rotatez(" + rot + "deg)";
+				rot += 1;
+			}
 		</script>
 		
 		
