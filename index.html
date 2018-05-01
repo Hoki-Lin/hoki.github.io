@@ -1,102 +1,112 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 	<head>
 		<meta charset="utf-8" />
 		<!-- 窗口和移动设备的屏幕一致,初始缩放为1:1,禁止用户缩放 -->
 		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
 		<title>The Hoki's Personal Web Page</title>
 		<link rel="icon" type="image/x-icon" href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524984249643&di=fae6f491430f87a63e16d099e6cf81ef&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F03134b357eb7b0ca84a0e282b87ffc5.jpg%40250w_188h_1c_1e_2o_100sh.jpg" />
-		<!-- 新 Bootstrap 核心 CSS 文件 -->  
-		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">  
-		  
-		<!-- 可选的Bootstrap主题文件（一般不用引入） -->  
+		<!-- 新 Bootstrap 核心 CSS 文件 -->
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+		<!-- 可选的Bootstrap主题文件（一般不用引入） -->
 		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 		<!--[if lt IE 9]>
 			<script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->	
+		<![endif]-->
 		<style type="text/css">
-			#GoTop{
-                width:40px;
-                height:40px;
-                background-color:#F59E1D;
-                position:fixed;
-                bottom:30px;
-                right:30px;
-                font-size:19pt;
-                text-align:center;
-                color:#FFF;
-                text-decoration:none;
-            }
+			#GoTop {
+				width: 40px;
+				height: 40px;
+				background-color: #F59E1D;
+				position: fixed;
+				bottom: 30px;
+				right: 30px;
+				font-size: 19pt;
+				text-align: center;
+				color: #FFF;
+				text-decoration: none;
+			}
+			
+			#myCarousel {
+				margin: 20px auto;
+			}
+			
+			.carousel-inner img {
+				margin: 0 auto;
+			}
 		</style>
 	</head>
+
 	<body>
 		<div class="container-fluid">
 			<div class="row">
 				<div class="bs-example" data-example-id="inverted-navbar">
-			<nav class="navbar navbar-inverse navbar-fixed-top">
-				<div class="container-fluid">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<nav class="navbar navbar-inverse navbar-fixed-top">
+						<div class="container-fluid">
+							<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 				            <span class="sr-only">Toggle navigation</span>
 				            <span class="icon-bar"></span>
 				            <span class="icon-bar"></span>
 				            <span class="icon-bar"></span>
 				         </button>
-						<a class="navbar-brand" href="#">
-							<img alt="Brand" width="20" height="20" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524984249643&di=fae6f491430f87a63e16d099e6cf81ef&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F03134b357eb7b0ca84a0e282b87ffc5.jpg%40250w_188h_1c_1e_2o_100sh.jpg">
-						</a>
-					</div>
+								<a class="navbar-brand" href="#">
+									<img alt="Brand" width="20" height="20" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524984249643&di=fae6f491430f87a63e16d099e6cf81ef&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F03134b357eb7b0ca84a0e282b87ffc5.jpg%40250w_188h_1c_1e_2o_100sh.jpg">
+								</a>
+							</div>
 
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						<ul class="nav navbar-nav">
-							<li class="active">
-								<a href="https://github.com/Hoki-Lin">Home<span class="sr-only">(current)</span></a>
-							</li>
-							<li>
-								<a href="https://www.bilibili.com/" target="_blank">Bilibili</a>
-							</li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">List<span class="caret"></span></a>
-								<ul class="dropdown-menu">
-									<li>
-										<a href="https://weibo.com/u/5690540493" target="_blank">weibo</a>
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav">
+									<li class="active">
+										<a href="https://github.com/Hoki-Lin">Home<span class="sr-only">(current)</span></a>
 									</li>
 									<li>
-										<a href="https://www.zhihu.com/people/hokilin/activities" target="_blank">zhihu</a>
+										<a href="https://www.bilibili.com/" target="_blank">Bilibili</a>
 									</li>
-									<li>
-										<a href="https://blog.csdn.net/qq_37118873" target="_blank">csdn</a>
-									</li>
-									<li>
-										<a href="https://github.com/Hoki-Lin" target="_blank">github</a>
-									</li>
-									<li role="separator" class="divider"></li>
-									<li>
-										<a href="http://v3.bootcss.com/" target="_blank">Bootstrap</a>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">List<span class="caret"></span></a>
+										<ul class="dropdown-menu">
+											<li>
+												<a href="https://weibo.com/u/5690540493" target="_blank">weibo</a>
+											</li>
+											<li>
+												<a href="https://www.zhihu.com/people/hokilin/activities" target="_blank">zhihu</a>
+											</li>
+											<li>
+												<a href="https://blog.csdn.net/qq_37118873" target="_blank">csdn</a>
+											</li>
+											<li>
+												<a href="https://github.com/Hoki-Lin" target="_blank">github</a>
+											</li>
+											<li role="separator" class="divider"></li>
+											<li>
+												<a href="http://v3.bootcss.com/" target="_blank">Bootstrap</a>
+											</li>
+										</ul>
 									</li>
 								</ul>
-							</li>
-						</ul>
-						<form class="navbar-form navbar-right" action="https://www.baidu.com/s" target="_blank">
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Search">
+								<form class="navbar-form navbar-right" action="https://www.baidu.com/s" target="_blank">
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Search">
+									</div>
+									<button type="submit" class="btn btn-default">Submit</button>
+								</form>
 							</div>
-							<button type="submit" class="btn btn-default">Submit</button>
-						</form>
-					</div>
-					<!-- /.navbar-collapse -->
+							<!-- /.navbar-collapse -->
+						</div>
+						<!-- /.container-fluid -->
+					</nav>
 				</div>
-				<!-- /.container-fluid -->
-			</nav>
-		</div>
 			</div>
 			<div class="row page-header"></div>
 			<div class="row">
 				<div class="col-md-5"></div>
 				<div class="col-md-2" id="pic" onmouseover="stopSpin()" onmouseout="startSpin()">
-					<img src="http://imgsrc.baidu.com/forum/w%3D580/sign=b0c34179cbfcc3ceb4c0c93ba244d6b7/ad64034f78f0f7365810815a0955b319eac413fb.jpg" class="img-responsive img-circle"/>
+					<img src="http://imgsrc.baidu.com/forum/w%3D580/sign=b0c34179cbfcc3ceb4c0c93ba244d6b7/ad64034f78f0f7365810815a0955b319eac413fb.jpg" class="img-responsive img-circle" />
 				</div>
 				<div class="col-md-5"></div>
 			</div>
@@ -105,37 +115,66 @@
 				<blockquote>拿着橡皮擦不掉你脑子黑漆漆<small>from<cite> github</cite></small></blockquote>
 				<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="https://music.163.com/outchain/player?type=2&id=535251412&auto=1&height=32"></iframe>
 			</div>
+
 			<div class="row page-header">
 				<div class="col-md-3 col-xs-6 col-sm-4">
-					<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524981080777&di=4e5e3985efbc4f8c05c843366506916d&imgtype=0&src=http%3A%2F%2Fwww.itmsc.cn%2Fuploads%2Fallimg%2F1601%2F454_160128095138_1.jpg" class="img-responsive"/>
+					<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524981080777&di=4e5e3985efbc4f8c05c843366506916d&imgtype=0&src=http%3A%2F%2Fwww.itmsc.cn%2Fuploads%2Fallimg%2F1601%2F454_160128095138_1.jpg" class="img-responsive" />
 					<h1 class="text-center">weibo</h1>
 					<h5 class="text-center"><a href="https://weibo.com/u/5690540493" target="_blank">Hoki's weibo</a></h5>
 				</div>
 				<div class="col-md-3 col-xs-6 col-sm-4">
-					<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524981546944&di=30de1ed1ff41af4ae804f80eaf67b688&imgtype=0&src=http%3A%2F%2Fimages.liqucn.com%2Fimg%2Fh98%2Fh28%2Fimg_localize_6a14a763d95f34a68e19afb8bb72c8bd_560x350.jpg" class="img-responsive"/>
+					<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524981546944&di=30de1ed1ff41af4ae804f80eaf67b688&imgtype=0&src=http%3A%2F%2Fimages.liqucn.com%2Fimg%2Fh98%2Fh28%2Fimg_localize_6a14a763d95f34a68e19afb8bb72c8bd_560x350.jpg" class="img-responsive" />
 					<h1 class="text-center">zhihu</h1>
 					<h5 class="text-center"><a href="https://www.zhihu.com/people/hokilin/activities" target="_blank">Hoki's zhihu</a></h5>
 				</div>
 				<div class="col-md-3 col-xs-6 col-sm-4">
-					<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524983778078&di=63eefaae90c91dbdd56933d9ae37ded1&imgtype=0&src=http%3A%2F%2Fimg3.doubanio.com%2Flpic%2Fs10279300.jpg" class="img-responsive"/>
+					<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524983778078&di=63eefaae90c91dbdd56933d9ae37ded1&imgtype=0&src=http%3A%2F%2Fimg3.doubanio.com%2Flpic%2Fs10279300.jpg" class="img-responsive" />
 					<h1 class="text-center">csdn</h1>
 					<h5 class="text-center"><a href="https://blog.csdn.net/qq_37118873" target="_blank">Hoki's csdn</a></h5>
 				</div>
 				<div class="col-md-3 col-xs-6 col-sm-4">
-					<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524982385198&di=740acd2c88e3ed2923449f164d30b0ac&imgtype=0&src=http%3A%2F%2Fdn-sdkcnssl.qbox.me%2Farticle%2FgQzzyDDHRGwAqpNTHfO4.jpg" class="img-responsive"/>
+					<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524982385198&di=740acd2c88e3ed2923449f164d30b0ac&imgtype=0&src=http%3A%2F%2Fdn-sdkcnssl.qbox.me%2Farticle%2FgQzzyDDHRGwAqpNTHfO4.jpg" class="img-responsive" />
 					<h1 class="text-center">github</h1>
 					<h5 class="text-center"><a href="https://github.com/Hoki-Lin" target="_blank">Hoki's github</a></h5>
 				</div>
 			</div>
+
+			<div id="myCarousel" class="carousel slide">
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+					<li data-target="#myCarousel" data-slide-to="3"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="https://i.imgur.com/qTmxQkX.png" alt="第一张" />
+					</div>
+					<div class="item">
+						<img src="https://i.imgur.com/6clZ2iL.png" alt="第二张" />
+					</div>
+					<div class="item">
+						<img src="https://i.imgur.com/tM1ANy0.jpg" alt="第三张" />
+					</div>
+					<div class="item">
+						<img src="https://i.imgur.com/Ome4WVC.png" alt="第四张" />
+					</div>
+				</div>
+
+				<a href="#myCarousel" data-slide="prev" class="carousel-control left">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+				<a href="#myCarousel" data-slide="next" class="carousel-control right">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</div>
 			<div class="row page-header span12">
 				<h1 class="page-header text-center"><strong>ABOUT ME</strong></h1>
 				<p class="text-center">
-					Hello,my name is Hoki_Lin.I live in Guangdong, China.
-					I am a college student, majoring in computer science.</p>
-				<p class="text-center">I'm willing to make friends with people.
-					And my dream is to be an excellent back-end programmer.</p>
+					Hello,my name is Hoki_Lin.I live in Guangdong, China. I am a college student, majoring in computer science.</p>
+				<p class="text-center">I'm willing to make friends with people. And my dream is to be an excellent back-end programmer.</p>
 			</div>
-			
+
 			<div class="row">
 				<h6 class="text-center">COPYRIGHT (C) 2018 BY HOKI SOFTWARE. ALL RIGHTS RESERVED.</h6>
 			</div>
@@ -143,78 +182,76 @@
 				<a id="GoTop" onclick="GoTopFunction()" href="javascript:void(0)" style="color: rgb(255, 255, 255); background-color: rgb(44, 44, 44); text-decoration: none;">∧</a>
 			</div>
 		</div>
-	
-	
-	
-	
-	
-	
-	
-		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->  
-		<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script> 
-		
+
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+
 		<script>
-			$(document).ready(function(){
+			$(document).ready(function() {
 				$("#GoTop").mouseenter(
-                    function(){
-                        $("#GoTop").css("color","#FFF");
-                        $("#GoTop").css("background-color","#0D87EA");
-                        $("#GoTop").css("text-decoration","none");
-                    }
-                );
-                $("#GoTop").mouseleave(
-                    function(){
-                        $("#GoTop").css("color","#FFF");
-                        $("#GoTop").css("background-color","#2C2C2C");
-                        $("#GoTop").css("text-decoration","none");
-                    }
-                );
-                
-                time = window.setInterval(begin,10);
+					function() {
+						$("#GoTop").css("color", "#FFF");
+						$("#GoTop").css("background-color", "#0D87EA");
+						$("#GoTop").css("text-decoration", "none");
+					}
+				);
+				$("#GoTop").mouseleave(
+					function() {
+						$("#GoTop").css("color", "#FFF");
+						$("#GoTop").css("background-color", "#2C2C2C");
+						$("#GoTop").css("text-decoration", "none");
+					}
+				);
+
+				time = window.setInterval(begin, 10);
 			});
 			var sth;
-			function GoTopFunction(){
-				sth=setInterval(GoTopFunctionEachScrollBy,10);    
+
+			function GoTopFunction() {
+				sth = setInterval(GoTopFunctionEachScrollBy, 10);
 			}
 
-			function GoTopFunctionEachScrollBy(eachHeight){
+			function GoTopFunctionEachScrollBy(eachHeight) {
 
 				//判断是否存在以下两个实例
-				if(document.documentElement && document.documentElement.scrollTop)
-				{
+				if(document.documentElement && document.documentElement.scrollTop) {
 					clearInterval(sth);
-				}else{                                                           
-					if(document.body.scrollTop<=0){
+				} else {
+					if(document.body.scrollTop <= 0) {
 						clearInterval(sth);
-					}else{
-						window.scrollBy(0,-25);
+					} else {
+						window.scrollBy(0, -25);
 					}
 				}
 			}
-			var rot = 0;// 角度
-			var time;// 定时器的名称
-			function startSpin(){
-				time = window.setInterval(begin,10);
+			var rot = 0; // 角度
+			var time; // 定时器的名称
+			function startSpin() {
+				time = window.setInterval(begin, 10);
 			}
-			
-			function stopSpin(){
+
+			function stopSpin() {
 				window.clearInterval(time);
 			}
-			
+
 			function begin(time) {
 				document.getElementById("pic").style.transform = "rotatez(" + rot + "deg)";
-				if (rot > 360){
+				if(rot > 360) {
 					rot = 0;
-				}else {
+				} else {
 					rot += 1;
 				}
-				
+
 			}
+
+			//自动播放
+			$("#myCarousel").carousel({
+				interval: 2500,
+			});
 		</script>
-		
-		
-		  
-		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->  
+
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 		<script src="https://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	</body>
+
 </html>
