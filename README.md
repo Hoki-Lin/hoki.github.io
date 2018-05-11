@@ -1,7 +1,4 @@
-# Hello Everyone
-> It is my first time to use github to make my personal web page.
-
-## 网页介绍
+# 网页介绍
 1. 使用Bootstrap构建
 2. 一切图片、icon都以url替代
 3. HTML、CSS、JavaScript代码都在index.html中
